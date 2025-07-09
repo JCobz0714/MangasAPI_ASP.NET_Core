@@ -1,3 +1,5 @@
+using MangasAPI.DTOs;
+
 var builder = WebApplication.CreateBuilder(args);
 
 var app = builder.Build();
@@ -22,6 +24,8 @@ List<MangaDto> mangas = [
         new(1984, 2, 29)
     )
 ];
+
+app.MapGet("mangas", () => mangas);
 
 app.MapGet("/", () => "Hello World!");
 

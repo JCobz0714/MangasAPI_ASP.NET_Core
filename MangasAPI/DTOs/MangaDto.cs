@@ -6,4 +6,4 @@ public record class MangaDto(
     string Author,
     string Genre,
     DateOnly PublishedDate
-)
+);
