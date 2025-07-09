@@ -1,4 +1,15 @@
+GET http://localhost:5014/mangas
 
-
-##
+###
 GET http://localhost:5014/mangas/1
+
+###
+POST http://localhost:5014/mangas
+Content-Type: application/json
+
+{
+    "name": "Naruto",
+    "author": "Masashi Kishimoto",
+    "genre": "Shonen",
+    "publishedDate": "2002-09-20"
+}

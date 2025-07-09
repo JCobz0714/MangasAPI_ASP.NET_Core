@@ -1,4 +1,4 @@
-namespace MangasAPI.DTOs
+namespace MangasAPI.DTOs;
 
 public record class CreateMangaDto(
     string Name,
