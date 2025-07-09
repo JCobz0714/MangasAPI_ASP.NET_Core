@@ -1,1 +1,4 @@
-GET http://localhost:5014/mangas
+
+
+##
+GET http://localhost:5014/mangas/1

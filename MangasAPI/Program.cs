@@ -25,8 +25,10 @@ List<MangaDto> mangas = [
     )
 ];
 
+//GET /games
 app.MapGet("mangas", () => mangas);
 
-app.MapGet("/", () => "Hello World!");
+//GET /games/{id}
+app.MapGet("mangas/{id}", (int id) => mangas.Find(game => game.Id == id));
 
 app.Run();
