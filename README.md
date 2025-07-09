@@ -1,6 +1,6 @@
 # WELCOME TO MY MANGAS API PROJECT
 
-This will be my first API project using ASP.NET Core and some basic HTML and CSS.
+This will be my first API project using ASP.NET Core and some basic HTML and CSS.  
 ... and even probably some JavaScript in it :)
 
 I will be updating the project every time I learn something new and i can implement it, just to practice
