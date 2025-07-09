@@ -4,6 +4,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 var app = builder.Build();
 
+const string getGameEndpointName = "GetManga";
+
 List<MangaDto> mangas = [
     new (1,
         "One Piece",
@@ -29,6 +31,21 @@ List<MangaDto> mangas = [
 app.MapGet("mangas", () => mangas);
 
 //GET /games/{id}
-app.MapGet("mangas/{id}", (int id) => mangas.Find(game => game.Id == id));
+app.MapGet("mangas/{id}", (int id) => mangas.Find(manga => manga.Id == id)).WithName(getGameEndpointName);
+
+//POST /games
+app.MapPost("mangas", (CreateMangaDto newManga) => 
+{
+    MangaDto manga = new (
+        mangas.Count + 1,
+        newManga.Name,
+        newManga.Author,
+        newManga.Genre,
+        newManga.PublishedDate
+    );
+
+    mangas.Add(manga);
+    return Results.CreatedAtRoute(getGameEndpointName, new { id = manga.Id }, manga);
+});
 
 app.Run();

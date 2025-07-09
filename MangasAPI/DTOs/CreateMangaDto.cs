@@ -1,6 +1,6 @@
 namespace MangasAPI.DTOs
 
-public record class CreateGameDto(
+public record class CreateMangaDto(
     string Name,
     string Author,
     string Genre,
