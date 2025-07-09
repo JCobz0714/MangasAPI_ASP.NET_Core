@@ -26,3 +26,4 @@ D:\ASP.NET\MangasAPI\MangasAPI\obj\Debug\net9.0\refint\MangasAPI.dll
 D:\ASP.NET\MangasAPI\MangasAPI\obj\Debug\net9.0\MangasAPI.pdb
 D:\ASP.NET\MangasAPI\MangasAPI\obj\Debug\net9.0\MangasAPI.genruntimeconfig.cache
 D:\ASP.NET\MangasAPI\MangasAPI\obj\Debug\net9.0\ref\MangasAPI.dll
+D:\ASP.NET\MangasAPI\MangasAPI\obj\Debug\net9.0\MangasAPI.sourcelink.json
